@@ -24,7 +24,7 @@ import javax.sql.DataSource;
 * E-mail: dolojia@gmail.com
 **/
 @Configuration
-@PropertySource(value = "classpath:druid-${spring.profiles.active}.properties")
+@PropertySource(value = "classpath:druid-config.properties")
 @ConditionalOnClass(DruidDataSource.class)
 public class DruidAutoConfiguration {
     private static final Logger LOGGER = LoggerFactory.getLogger(DruidAutoConfiguration.class);
