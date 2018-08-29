@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dolo.wechat.mapper.WxLocationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dolo.wechat.entity.WxLocation">
+        <id column="id" property="id" />
+        <result column="company_name" property="companyName" />
+        <result column="company_addr" property="companyAddr" />
+        <result column="company_desc" property="companyDesc" />
+        <result column="location_x" property="locationX" />
+        <result column="location_y" property="locationY" />
+        <result column="creator" property="creator" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="accountId" property="accountId" />
+    </resultMap>
+
+</mapper>

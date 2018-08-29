@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dolo.wechat.mapper.UserBindMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dolo.wechat.entity.UserBind">
+        <id column="id" property="id" />
+        <result column="id_no" property="idNo" />
+        <result column="phone_no" property="phoneNo" />
+        <result column="open_id" property="openId" />
+        <result column="latest_bind_time" property="latestBindTime" />
+        <result column="latest_cancle_bind_time" property="latestCancleBindTime" />
+        <result column="bind_flag" property="bindFlag" />
+    </resultMap>
+
+</mapper>

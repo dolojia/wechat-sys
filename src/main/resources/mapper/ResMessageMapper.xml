@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dolo.wechat.mapper.ResMessageMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dolo.wechat.entity.ResMessage">
+        <id column="id" property="id" />
+        <result column="msg_name" property="msgName" />
+        <result column="msg_type" property="msgType" />
+        <result column="res_type" property="resType" />
+        <result column="create_time" property="createTime" />
+        <result column="update_time" property="updateTime" />
+        <result column="creator" property="creator" />
+        <result column="properties" property="properties" />
+        <result column="key_words" property="keyWords" />
+        <result column="status" property="status" />
+        <result column="accountId" property="accountId" />
+    </resultMap>
+
+</mapper>

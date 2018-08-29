@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时， 你会看到log4j2内部各种详细输出。可以设置成OFF(关闭)或Error(只输出错误信息) -->
+<Configuration status = "info">
+    <properties>
+        <property name="app_name">
+            cashloan-sys
+        </property>
+        <property name="path">
+           logs
+        </property>
+        <property name="log_path">
+            ${path}/${app_name}-info.log
+        </property>
+        <property name="log_backup_path">
+            ${path}/${app_name}-info.log.%d{yyyy-MM-dd}.%i
+        </property>
+        <property name="error_path">
+            ${path}/${app_name}-error.log
+        </property>
+        <property name="error_backup_path">
+            ${path}/${app_name}-error.log.%d{yyyy-MM-dd}.%i
+        </property>
+        <!-- 日志切割的最小单位 -->
+		<property name="every_file_size">
+			200M
+		</property>
+    </properties>
+
+    <!-- 打印出所有的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档 -->
+    <Appenders>
+        <!-- 输出控制台日志的配置 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--控制台只输出debug及以上级别的信息（onMatch），其他的直接拒绝（onMismatch） -->
+            <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
+            <!-- 输出日志的格式 -->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+
+        <!-- <SMTP name="Mail" subject="Error Log" to="xxx" from="xxx" cc="xxx"
+            smtpHost="xxx" smtpPort="25" bufferSize="50" smtpDebug="false"> </SMTP> -->
+
+        <RollingRandomAccessFile name="InfoFile" fileName="${log_path}" immediateFlush="true" filePattern="${log_backup_path}" append = "true">
+            <!-- 日志格式：%时间 、%t创建logging事件的线程名、%-5level日志级别、%logger{36}类名、%L输出错误行号 、%m输出错误信息、%n换行符 -->
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} [%t] %-5level %logger{36} %L %M - %msg%xEx%n" charset="UTF-8" />
+            <Filters>
+                <!-- 记录级别信息(此处兼容sql打印) -->
+                <ThresholdFilter level="error" onMatch="DENY" onMismatch="ACCEPT" />
+                <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY" />
+            </Filters>
+            <SizeBasedTriggeringPolicy size="${every_file_size}" />
+        </RollingRandomAccessFile>
+
+        <!-- 存储所有error信息 -->
+        <RollingRandomAccessFile name="ErrorFile" fileName="${error_path}" immediateFlush="true" filePattern="${error_backup_path}" append = "true">
+            <PatternLayout pattern="%d{yyyy-MM-dd 'at' HH:mm:ss z} [%t] %-5level %logger{36} %L %M - %msg%xEx%n" charset="UTF-8" />
+            <Filters>
+                <!-- 只记录error级别信息 -->
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY" />
+            </Filters>
+            <SizeBasedTriggeringPolicy size="${every_file_size}" />
+        </RollingRandomAccessFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="InfoFile" />
+            <AppenderRef ref="ErrorFile" />
+        </Root>
+        <!--sql打印-->
+        <Logger name="com.dolo.wechat.mapper" level="debug"></Logger>
+    </Loggers>
+</Configuration>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dolo.wechat.mapper.EventMessageJournalMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dolo.wechat.entity.EventMessageJournal">
+        <id column="id" property="id" />
+        <result column="to_user_name" property="toUserName" />
+        <result column="from_user_name" property="fromUserName" />
+        <result column="create_time" property="createTime" />
+        <result column="event" property="event" />
+        <result column="event_key" property="eventKey" />
+        <result column="ticket" property="ticket" />
+        <result column="properties" property="properties" />
+        <result column="send_flag" property="sendFlag" />
+    </resultMap>
+
+</mapper>

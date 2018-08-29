@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dolo.wechat.mapper.MsgInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.dolo.wechat.entity.MsgInfo">
+        <id column="ID" property="id" />
+        <result column="MAKEDATE" property="makedate" />
+        <result column="MAKETIME" property="maketime" />
+        <result column="MSGTYPE" property="msgtype" />
+        <result column="MSGDIRECTION" property="msgdirection" />
+        <result column="USERID" property="userid" />
+        <result column="USERNAME" property="username" />
+        <result column="MSGTILE" property="msgtile" />
+        <result column="CONTENT" property="content" />
+        <result column="CONTENTPRE" property="contentpre" />
+        <result column="SYSTEMCODE" property="systemcode" />
+        <result column="SERVICECODE" property="servicecode" />
+        <result column="DATATYPE" property="datatype" />
+        <result column="SENDWAY" property="sendway" />
+        <result column="FIXEDDATE" property="fixeddate" />
+        <result column="FIXEDTIME" property="fixedtime" />
+        <result column="UNITCODE" property="unitcode" />
+        <result column="OPERCODE" property="opercode" />
+        <result column="SYSOPERDATE" property="sysoperdate" />
+        <result column="SYSOPERTIME" property="sysopertime" />
+        <result column="TEMP1" property="temp1" />
+        <result column="TEMP2" property="temp2" />
+        <result column="TEMP3" property="temp3" />
+        <result column="CUSTOMERID" property="customerid" />
+        <result column="REPORTDATE" property="reportdate" />
+        <result column="REPORTTIME" property="reporttime" />
+        <result column="DEALORDER" property="dealorder" />
+        <result column="LASTSENDDATE" property="lastsenddate" />
+        <result column="LASTSENDTIME" property="lastsendtime" />
+        <result column="SENDTIMES" property="sendtimes" />
+        <result column="MSGSTATE" property="msgstate" />
+        <result column="FILTERTYPE" property="filtertype" />
+        <result column="TEMP4" property="temp4" />
+        <result column="TEMP5" property="temp5" />
+    </resultMap>
+
+</mapper>
