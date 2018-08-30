@@ -69,17 +69,17 @@ public class AuthenticationFilter implements Filter {
 
         Map<String, Object> pramMap = new HashMap<>();
         ServletRequest requestWrapper = new RequestWrapper(request);
-        if ("POST".equalsIgnoreCase(method)) {
-            params = this.readByString(requestWrapper);
-            pramMap = JSON.parseObject(params, Map.class);
-        } else {
-            Enumeration<String> enu = request.getParameterNames();
-            while (enu.hasMoreElements()) {
-                String paramName = enu.nextElement().trim();
-                pramMap.put(paramName, request.getParameter(paramName));
-            }
-            params = pramMap.toString();
-        }
+//        if ("POST".equalsIgnoreCase(method)) {
+//            params = this.readByString(requestWrapper);
+//            pramMap = JSON.parseObject(params, Map.class);
+//        } else {
+//            Enumeration<String> enu = request.getParameterNames();
+//            while (enu.hasMoreElements()) {
+//                String paramName = enu.nextElement().trim();
+//                pramMap.put(paramName, request.getParameter(paramName));
+//            }
+//            params = pramMap.toString();
+//        }
         logger.info(REQUEST_PREFIX + "[" + method + "]" + requestURl + "," + params);
         try {
             // 请求头签名校验

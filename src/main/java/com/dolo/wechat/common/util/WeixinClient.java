@@ -56,7 +56,7 @@ public class WeixinClient {
                 if (Util.isBlank(jsonObj)) {
                     return null;
                 }
-                int errorCode = (Integer) jsonObj.getInteger("errcode");
+                int errorCode = jsonObj.getIntValue("errcode");
                 if (errorCode != 0) {
                     String errorMsg = jsonObj.getString("errmsg");
                     logger.error("request url=[" + url + "],errorCode=[" + errorCode + "],errorMsg=[" + errorMsg + "]");

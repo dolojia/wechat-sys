@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IResMessageService extends IService<ResMessage> {
 
+    ResMessage getResMessageByAccountIdAndMessageKey(String keyWords,String accountId);
 }

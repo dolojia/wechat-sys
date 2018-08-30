@@ -4,11 +4,12 @@ import com.dolo.wechat.entity.MessageJournal;
 import com.dolo.wechat.mapper.MessageJournalMapper;
 import com.dolo.wechat.service.IMessageJournalService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author dolojia
@@ -17,4 +18,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class MessageJournalServiceImpl extends ServiceImpl<MessageJournalMapper, MessageJournal> implements IMessageJournalService {
 
+    @Autowired
+    private MessageJournalMapper messageJournalMapper;
+
+    @Override
+    public int insertMessageJourna(MessageJournal messageJournal) {
+        return messageJournalMapper.insert(messageJournal);
+    }
 }

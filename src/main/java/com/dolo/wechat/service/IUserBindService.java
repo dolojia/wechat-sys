@@ -13,4 +13,8 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IUserBindService extends IService<UserBind> {
 
+    public int updateUserBindStratusByOpenId(String openId,String bindType);
+
+    public int updateUserBindByOpenId(UserBind userBind);
+
 }

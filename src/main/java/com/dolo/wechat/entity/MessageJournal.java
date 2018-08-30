@@ -32,7 +32,7 @@ public class MessageJournal extends Model<MessageJournal> {
     @TableField("msg_type")
     private String msgType;
     @TableField("msg_id")
-    private String msgId;
+    private Long msgId;
     private String properties;
     @TableField("send_flag")
     private String sendFlag;
@@ -78,11 +78,11 @@ public class MessageJournal extends Model<MessageJournal> {
         this.msgType = msgType;
     }
 
-    public String getMsgId() {
+    public Long getMsgId() {
         return msgId;
     }
 
-    public void setMsgId(String msgId) {
+    public void setMsgId(Long msgId) {
         this.msgId = msgId;
     }
 
