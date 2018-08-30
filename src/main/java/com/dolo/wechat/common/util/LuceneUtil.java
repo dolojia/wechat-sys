@@ -1,10 +1,13 @@
 package com.dolo.wechat.common.util;
 
+import com.dolo.wechat.entity.ResMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.apache.lucene.analysis.cjk.CJKAnalyzer;
@@ -105,6 +108,58 @@ public class LuceneUtil {
         File file = new File(indexPath);
         dir = FSDirectory.open(file);
         if (IndexWriter.isLocked(dir)) {
+            IndexWriter.unlock(dir);
+        }
+        iwriter = new IndexWriter(dir, config);
+        iwriter.deleteAll();
+        iwriter.commit();
+        iwriter.close();
+        dir.close();
+    }
+
+    /**
+     *
+     * 功能描述：重新生成关键字索引
+     *
+     * @throws IOException
+     */
+    public static void generatorLuceneIndex(String accountId, String luceneIndexPath, List<ResMessage> resMessageList) throws IOException
+    {
+        String subLuceneIndexPath = luceneIndexPath + "/" + accountId;
+        // 如果当前账号的索引文件夹不存在，则创建文件夹
+        File file = new File(subLuceneIndexPath);
+        if (!file.exists())
+        {
+            file.mkdir();
+        }
+        // 清除当前账号的索引
+        LuceneUtil.delAll(subLuceneIndexPath);
+        Map<String, String> map = new HashMap<String, String>();
+        for (ResMessage resMessage : resMessageList)
+        {
+            // 只有当前账号的应答消息才进行重新生成索引
+            if (resMessage.getAccountId().equalsIgnoreCase(accountId))
+            {
+                map.put("" + resMessage.getId(), resMessage.getKeyWords());
+            }
+        }
+        LuceneUtil.createIndex(subLuceneIndexPath, map);
+    }
+
+    /**
+     * 索引文件夹
+     * 需要从表里获得所有 需要创建lucene索引的数据,并生成map 因为修改索引文件需要重新删除,再创建,这样也能保证定期更新有问题的索引文件
+     * @throws IOException
+     */
+    public static void delAll(String luceneIndexPath) throws IOException
+    {
+        IndexWriter iwriter = null;
+        Directory dir = null;
+        IndexWriterConfig config = new IndexWriterConfig(Version.LUCENE_47, analyzer);
+        File file = new File(luceneIndexPath);
+        dir = FSDirectory.open(file);
+        if (IndexWriter.isLocked(dir))
+        {
             IndexWriter.unlock(dir);
         }
         iwriter = new IndexWriter(dir, config);

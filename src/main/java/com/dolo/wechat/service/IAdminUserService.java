@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IAdminUserService extends IService<AdminUser> {
 
+    AdminUser getAdminUserByName(String userName, String accountId);
 }

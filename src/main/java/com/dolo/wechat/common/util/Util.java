@@ -5,6 +5,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.time.DateFormatUtils;
 
 import javax.servlet.ServletInputStream;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,6 +13,8 @@ import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Util {
 
@@ -71,5 +74,48 @@ public class Util {
             index += 6;
         }
         return buffer.toString();
+    }
+
+    /**
+     *
+     * 功能描述：根据名称从Cookie中返回值
+     *
+     * @param request
+     * @param userName
+     * @return
+     */
+    public static String getUserNameFromCookie(HttpServletRequest request, String userName)
+    {
+        Map<String, Cookie> cookieMap = ReadCookieMap(request);
+        if (cookieMap.containsKey(userName))
+        {
+            Cookie cookie = (Cookie) cookieMap.get(userName);
+            return cookie.getValue();
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    /**
+     *
+     * 功能描述：将cookie中的所有对象读取到Map中返回
+     *
+     * @param request
+     * @return
+     */
+    private static Map<String, Cookie> ReadCookieMap(HttpServletRequest request)
+    {
+        Map<String, Cookie> cookieMap = new HashMap<String, Cookie>();
+        Cookie[] cookies = request.getCookies();
+        if (null != cookies)
+        {
+            for (Cookie cookie : cookies)
+            {
+                cookieMap.put(cookie.getName(), cookie);
+            }
+        }
+        return cookieMap;
     }
 }

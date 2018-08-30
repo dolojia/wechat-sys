@@ -19,4 +19,5 @@ public interface IResMessageService extends IService<ResMessage> {
 
     ResMessage getResMessageByAccountIdAndMessageName(String mesageName, String accountId);
 
+    void checkResMessage(String id, String msgName, String keyWords, String accountId);
 }
