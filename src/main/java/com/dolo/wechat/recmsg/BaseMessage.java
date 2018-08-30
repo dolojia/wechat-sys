@@ -1,7 +1,10 @@
 package com.dolo.wechat.recmsg;
 
+import com.dolo.wechat.common.util.DateUtil;
 import com.dolo.wechat.common.util.Util;
 import org.apache.commons.lang.time.DateFormatUtils;
+
+import java.util.Date;
 
 
 /**
@@ -53,7 +56,7 @@ public class BaseMessage {
 	}
 
 	public String getCreateTime() {
-		return Util.convert2String(this.CreateTime*1000,null);
+		return DateUtil.convert2String(this.CreateTime*1000,null);
 	}
 
 	public void setCreateTime(long createTime) {

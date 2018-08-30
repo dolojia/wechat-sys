@@ -159,7 +159,7 @@ public class MessageController extends  BaseController
     @RequestMapping(value = "/get_article_content", method = RequestMethod.POST)
     @ResponseBody
     public ResultObject getArticleMessageContent(@RequestParam(value = "id")
-    Integer id)
+    String id)
     {
         String content;
         try
@@ -167,7 +167,7 @@ public class MessageController extends  BaseController
             content = this.messageService.getArticleMessageContent(id);
             return new ResultObject(content);
         }
-        catch (IOException e)
+        catch (Exception e)
         {
             logger.error("get article error!", e);
             return new ResultObject(-1, e.getMessage());

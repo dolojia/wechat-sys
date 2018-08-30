@@ -2,7 +2,7 @@ package com.dolo.wechat.common.util;
 
 
 import com.alibaba.fastjson.JSONObject;
-import com.dolo.wechat.business.MessageFactory;
+import com.dolo.wechat.factory.MessageFactory;
 import com.dolo.wechat.common.xml.BaseEventMessageXStream;
 import com.dolo.wechat.common.xml.BaseMessageXStream;
 import com.dolo.wechat.common.xml.CDATAXppDriver;

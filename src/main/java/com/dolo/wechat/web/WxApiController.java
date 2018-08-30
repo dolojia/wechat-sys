@@ -14,14 +14,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.dolo.wechat.business.WxApiService;
 import com.dolo.wechat.common.util.Util;
+import com.dolo.wechat.common.valid.ValidField;
+import com.dolo.wechat.common.valid.ValidMap;
 import com.dolo.wechat.entity.AccessToken;
 import com.dolo.wechat.service.IAccessTokenService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ObjectUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class WxApiController extends BaseController {
@@ -39,7 +39,7 @@ public class WxApiController extends BaseController {
      * @param response
      * @throws IOException
      */
-    @RequestMapping(value = "getUserInfo.xhtml", method = RequestMethod.POST)
+    @RequestMapping(value = "getUserInfo", method = RequestMethod.POST)
     public void getUserInfo(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String userInfoParam = Util.getRequestXmlData(request);
         logger.info("************userInfoParam:" + userInfoParam);
@@ -60,11 +60,13 @@ public class WxApiController extends BaseController {
      * @param response
      * @throws IOException
      */
-    @RequestMapping(value = "getAccessToken.xhtml", method = RequestMethod.POST)
-    public void getAccessToken(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        String pubCode = Util.getRequestXmlData(request);
-        String secretKey = "";
-        String accessToken = wxApiService.getAccessTokenFromApi(pubCode,secretKey);
+    @ValidMap(fields = { @ValidField(fieldName = "appid", notBlank = true, msg = "appid不能为空"),
+            @ValidField(fieldName = "secretKey", notBlank = true, msg = "secretKey不能为空")})
+    @PostMapping(value = "getAccessToken")
+    public void getAccessToken(HttpServletResponse response, @RequestBody Map<String, String> paramMap) throws IOException {
+        String appid = paramMap.get("appid");
+        String secretKey = paramMap.get("secretKey");
+        String accessToken = wxApiService.getAccessTokenFromApi(appid,secretKey);
         response.setCharacterEncoding("UTF-8");
         logger.info("%%%%%%%%%%5accessToken:" + accessToken);
         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(response.getOutputStream(), "UTF-8"));

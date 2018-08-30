@@ -4,6 +4,7 @@ import com.dolo.wechat.entity.ResMessage;
 import com.dolo.wechat.mapper.ResMessageMapper;
 import com.dolo.wechat.service.IResMessageService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -17,4 +18,30 @@ import org.springframework.stereotype.Service;
 @Service
 public class ResMessageServiceImpl extends ServiceImpl<ResMessageMapper, ResMessage> implements IResMessageService {
 
+    @Autowired
+    private ResMessageMapper resMessageMapper;
+
+    @Override
+    public ResMessage getResMessageByAccountIdAndMessageKey(String keyWords, String accountId) {
+        ResMessage resMessage = new ResMessage();
+        resMessage.setAccountId(accountId);
+        resMessage.setKeyWords(keyWords);
+        return resMessageMapper.selectOne(resMessage);
+    }
+
+    @Override
+    public ResMessage getResMessageByAccountIdAndId(Long id, String accountId) {
+        ResMessage resMessage = new ResMessage();
+        resMessage.setAccountId(accountId);
+        resMessage.setId(id);
+        return resMessageMapper.selectOne(resMessage);
+    }
+
+    @Override
+    public ResMessage getResMessageByAccountIdAndMessageName(String mesageName, String accountId) {
+        ResMessage resMessage = new ResMessage();
+        resMessage.setAccountId(accountId);
+        resMessage.setMsgName(mesageName);
+        return resMessageMapper.selectOne(resMessage);
+    }
 }

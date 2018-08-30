@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IMessageJournalService extends IService<MessageJournal> {
 
+    public int insertMessageJourna(MessageJournal messageJournal);
 }

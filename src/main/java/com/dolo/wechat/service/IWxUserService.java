@@ -13,4 +13,8 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IWxUserService extends IService<WxUser> {
 
+    public Integer updateWxUserByOpenId(WxUser wxUser);
+
+    public WxUser getWxUserByOpenId(String openId);
+
 }

@@ -1,4 +1,4 @@
-package com.dolo.wechat.business;
+package com.dolo.wechat.factory;
 
 import com.dolo.wechat.recmsg.*;
 
