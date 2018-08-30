@@ -77,4 +77,11 @@ public class JsonUtil {
         }
         return JSONObject.parseObject(jsonStr);
     }
+
+    public static boolean isBlank(JSONObject jsonObj) {
+        if (jsonObj == null || jsonObj.isEmpty()){
+            return true;
+        }
+        return false;
+    }
 }

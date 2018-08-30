@@ -23,6 +23,10 @@ public class AppConfigProperties {
     private static String accountId2;
     private static String token2;
 
+    private static  String resArticleUrl;
+
+    private static String lucenePath;
+
     public static String getAppid() {
         return appid;
     }
@@ -85,5 +89,21 @@ public class AppConfigProperties {
 
     public static void setToken2(String token2) {
         AppConfigProperties.token2 = token2;
+    }
+
+    public static String getResArticleUrl() {
+        return resArticleUrl;
+    }
+
+    public static void setResArticleUrl(String resArticleUrl) {
+        AppConfigProperties.resArticleUrl = resArticleUrl;
+    }
+
+    public static String getLucenePath() {
+        return lucenePath;
+    }
+
+    public static void setLucenePath(String lucenePath) {
+        AppConfigProperties.lucenePath = lucenePath;
     }
 }

@@ -170,7 +170,7 @@ public class MessageService
                     List<ArticleMessageItem> articleMessageItems = articleMessageItemService.getItemsByMessageId(articleMessageId);
                     // 同时响应文本和图文消息
                     responseMessage = XmlUtil.getResTextMessageJsonStr(defaultTextMessage.getProperties(), baseMessage) + "multiResMessage"
-                            + XmlUtil.getResArticleMessageJsonStr(articleMessageItems, baseMessage, wxwebUrl);
+                            + XmlUtil.getResArticleMessageJsonStr(articleMessageItems, baseMessage, AppConfigProperties.getResArticleUrl());
                     this.insertResTextMessage2DB(defaultTextMessage.getProperties(), baseMessage);
                     this.insertResArticleMessage2DB(articleMessageItems, baseMessage);
                 }
@@ -186,7 +186,7 @@ public class MessageService
                     // 只存在默认的图文消息
                     Long articleMessageId = defaultArticleMessage.getId();
                     List<ArticleMessageItem> articleMessageItems = articleMessageItemService.getItemsByMessageId(articleMessageId);
-                    responseMessage = XmlUtil.getResArticleMessage(articleMessageItems, baseMessage, wxwebUrl);
+                    responseMessage = XmlUtil.getResArticleMessage(articleMessageItems, baseMessage, AppConfigProperties.getResArticleUrl());
                     // 关注时默认的应答图文消息入库
                     this.insertResArticleMessage2DB(articleMessageItems, baseMessage);
                 }
@@ -256,9 +256,7 @@ public class MessageService
 
 
     /**
-     *
      * 功能描述：根据id返回图文消息内容
-     *
      * @param id
      * @return
      */
@@ -273,7 +271,6 @@ public class MessageService
 
 
     /**
-     *
      * 功能描述：上行消息入库
      *
      * @param requestXmlData
@@ -339,9 +336,7 @@ public class MessageService
     /**
      *
      * 功能描述：事件消息入库
-     *
      * @param requestXmlData
-     * @param baseMessage
      */
     private void insertEventMessage2DB(String requestXmlData, BaseEventMessage baseEventMessage)
     {
@@ -430,7 +425,7 @@ public class MessageService
             {
                 Long articleMessageId = resMessage.getId();
                 List<ArticleMessageItem> articleMessageItems = articleMessageItemService.getItemsByMessageId(articleMessageId);
-                responseMessageStr = XmlUtil.getResArticleMessage(articleMessageItems, baseMessage, wxwebUrl);
+                responseMessageStr = XmlUtil.getResArticleMessage(articleMessageItems, baseMessage, AppConfigProperties.getResArticleUrl());
                 // 应答图文消息入库
                 this.insertResArticleMessage2DB(articleMessageItems, baseMessage);
             }
@@ -452,7 +447,7 @@ public class MessageService
         {
             return null;
         }
-        ResMessage resMessage = resMessageService.getResMessageByAccountIdAndMessageName(messageName, baseMessage.getToUserName())
+        ResMessage resMessage = resMessageService.getResMessageByAccountIdAndMessageName(messageName, baseMessage.getToUserName());
         String responseMessageStr = "";
         if (resMessage != null)
         {
@@ -467,7 +462,7 @@ public class MessageService
             {
                 Long articleMessageId = resMessage.getId();
                 List<ArticleMessageItem> articleMessageItems = articleMessageItemService.getItemsByMessageId(articleMessageId);
-                responseMessageStr = XmlUtil.getResArticleMessage(articleMessageItems, baseMessage, wxwebUrl);
+                responseMessageStr = XmlUtil.getResArticleMessage(articleMessageItems, baseMessage, AppConfigProperties.getResArticleUrl());
                 // 应答图文消息入库
                 this.insertResArticleMessage2DB(articleMessageItems, baseMessage);
             }
@@ -583,10 +578,7 @@ public class MessageService
 
 
     /**
-     *
-     * 功能描述：返回最近的公司
-     *
-     * @param locationEventMessage
+     * 功能描述：返回最近的公司地址
      * @return
      */
     private WxLocation getShortestLocation(LocationMessage locationMessage, String accountId)

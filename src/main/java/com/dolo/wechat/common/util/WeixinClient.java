@@ -53,7 +53,7 @@ public class WeixinClient {
                 String reponseStr = this.apiClient.getResponseStr();
                 logger.info("&&&&&&&&&&&&&&&sendHttpRequest reponseStr:" + reponseStr);
                 JSONObject jsonObj = JSONObject.parseObject(reponseStr);
-                if (Util.isBlank(jsonObj)) {
+                if (JsonUtil.isBlank(jsonObj)) {
                     return null;
                 }
                 int errorCode = jsonObj.getIntValue("errcode");
@@ -82,7 +82,7 @@ public class WeixinClient {
             if (flag) {
                 String reponseStr = this.apiClient.getResponseStr();
                 JSONObject jsonObj = JSONObject.parseObject(reponseStr);
-                if (Util.isBlank(jsonObj)) {
+                if (JsonUtil.isBlank(jsonObj)) {
                     return false;
                 }
                 int errorCode = (Integer) jsonObj.getInteger("errcode");
@@ -142,7 +142,7 @@ public class WeixinClient {
         if (flag) {
             String reponseStr = this.apiClient.getResponseStr();
             JSONObject jsonObj = JSONObject.parseObject(reponseStr);
-            if (Util.isBlank(jsonObj)) {
+            if (JsonUtil.isBlank(jsonObj)) {
                 return null;
             }
             int errorCode = (Integer) jsonObj.getInteger("errcode");
@@ -159,9 +159,7 @@ public class WeixinClient {
 
     /**
      * 功能描述：
-     *
-     * @param params
-     * @return
+     ** @return
      * @throws IOException
      */
     public void customSend(String sendUrl, String messageJsonStr) throws IOException {
@@ -181,7 +179,7 @@ public class WeixinClient {
         if (flag) {
             String reponseStr = this.apiClient.getResponseStr();
             JSONObject jsonObj = JSONObject.parseObject(reponseStr);
-            if (Util.isBlank(jsonObj)) {
+            if (JsonUtil.isBlank(jsonObj)) {
                 return null;
             }
             int errorCode = (Integer) jsonObj.getInteger("errcode");

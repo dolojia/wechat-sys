@@ -3,9 +3,9 @@ package com.dolo.wechat.business;
 import java.io.IOException;
 
 import com.dolo.wechat.common.util.LuceneUtil;
+import com.dolo.wechat.propertie.AppConfigProperties;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,18 +18,14 @@ import org.springframework.stereotype.Service;
 public class LuceneService {
     protected final Log logger = LogFactory.getLog(getClass());
 
-    @Value("${lucene.index.path}")
-    private String luceneIndexPath;
-
     /**
      * 功能描述：根据上行消息返回下行回消息的messageId
      *
-     * @param message
      * @return
      * @throws IOException
      */
     public String getMessageId(String content, String accountId) throws IOException {
-        logger.info("******luceneIndexPath:" + luceneIndexPath + "/" + accountId);
-        return LuceneUtil.queryByLucene(luceneIndexPath + "/" + accountId, content, false);
+        logger.info("******luceneIndexPath:" + AppConfigProperties.getLucenePath() + "/" + accountId);
+        return LuceneUtil.queryByLucene(AppConfigProperties.getLucenePath() + "/" + accountId, content, false);
     }
 }
