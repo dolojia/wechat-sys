@@ -1,1 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
+/.idea/
+/target/
+/wechat-sys.iml
+/wechat-sys.iws
+/wechat-sys.ipr
+/logs/

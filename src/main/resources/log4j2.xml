@@ -3,7 +3,7 @@
 <Configuration status = "info">
     <properties>
         <property name="app_name">
-            cashloan-sys
+            wechat-sys
         </property>
         <property name="path">
            logs
