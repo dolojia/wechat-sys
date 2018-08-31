@@ -56,7 +56,7 @@ public class ResMessageServiceImpl extends ServiceImpl<ResMessageMapper, ResMess
         resMessage.setMsgName(mesageName);
         resMessage.setKeyWords(keyWords);
         Map<String, Object> map = new HashMap<>();
-        map.put("mesage_name",mesageName);
+        map.put("msg_name",mesageName);
         map.put("key_words",keyWords);
         map.put("account_id",accountId);
         return resMessageMapper.selectByMap(map);

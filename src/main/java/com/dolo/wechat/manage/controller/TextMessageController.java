@@ -39,6 +39,7 @@ public class TextMessageController  extends BaseController
     
     private AdminUser adminUser;
 
+    @Autowired
     private IAdminUserService adminUserService;
 
     /**
@@ -70,8 +71,10 @@ public class TextMessageController  extends BaseController
         }
         catch (IOException e)
         {
+            logger.error("保存文本消息异常", e);
             return new ResultObject(-100,e.getMessage());
         }catch(Exception e){
+            logger.error("保存文本消息异常", e);
             return new ResultObject(-1,e.getMessage());
         }
         return new ResultObject();
