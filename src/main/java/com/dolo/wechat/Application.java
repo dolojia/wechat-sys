@@ -25,9 +25,6 @@ import java.util.List;
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
 public class Application extends SpringBootServletInitializer {
 
-    @Autowired
-    private AuthenticationFilter authenticationFilter;
-
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Application.class, args);
     }
@@ -38,14 +35,14 @@ public class Application extends SpringBootServletInitializer {
      * 作者: dolojia
      * 修改日期：2018/8/29 14:39
      */
-    @Bean
-    public FilterRegistrationBean filterRegistrationBean() {
-        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
-        registrationBean.setFilter(authenticationFilter);
-        List<String> urlPatterns = new ArrayList<>();
-        urlPatterns.add("/*");
-        registrationBean.setUrlPatterns(urlPatterns);
-        return registrationBean;
-    }
+//    @Bean
+//    public FilterRegistrationBean filterRegistrationBean() {
+//        FilterRegistrationBean registrationBean = new FilterRegistrationBean();
+//        registrationBean.setFilter(authenticationFilter);
+//        List<String> urlPatterns = new ArrayList<>();
+//        urlPatterns.add("/*");
+//        registrationBean.setUrlPatterns(urlPatterns);
+//        return registrationBean;
+//    }
 
 }

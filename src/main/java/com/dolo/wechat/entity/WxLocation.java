@@ -22,7 +22,7 @@ public class WxLocation extends Model<WxLocation> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
-    private String id;
+    private Long id;
     @TableField("company_name")
     private String companyName;
     @TableField("company_addr")
@@ -42,11 +42,11 @@ public class WxLocation extends Model<WxLocation> {
     private String accountId;
 
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

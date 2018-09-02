@@ -42,6 +42,7 @@ public class AuthenticationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain)
             throws IOException, ServletException {
+
         long start = System.currentTimeMillis();
         HttpServletRequest request = null;
         HttpServletResponse response = null;
@@ -61,6 +62,11 @@ public class AuthenticationFilter implements Filter {
                 filterChain.doFilter(request, response);
                 return;
             }
+        }
+
+        if (1 == 1){
+            filterChain.doFilter(request, response);
+            return;
         }
 
         String params = "";

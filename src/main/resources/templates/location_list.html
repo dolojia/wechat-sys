@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/commons/login :: commomHead('login')"></head>
+
+<body id="body" style="background:#fff;">
+	<div class="col-lg-12">
+		<h4 class="page-header">位置管理</h4>
+	</div>
+		<div class="col-lg-12">
+		<a id="btn" href="jump_location_edit.xhtml?operType=add" type="button" class="btn btn-primary btn-sm"><i class="fa fa-plus-circle"></i>  增加位置信息</a>
+	</div>
+	<div class="col-lg-12" style="margin-top:10px;">
+	<div class="groupTime">
+		<div class="form-group input-group">
+	        <span class="input-group-addon">创建时间：</span>
+	        <input type="text" id="createTimeBegin" class="form-control time-input" readonly="readonly">
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default time-btn">
+					<i class="fa fa-calendar"></i>
+				</button>
+			</span>
+	    </div>
+	    <div class="timeShowDv"></div>
+    </div>
+    <div class="groupTime">
+	    <div class="form-group input-group">
+	        <span class="input-group-addon">至</span>
+			<input type="text" id="createTimeEnd" class="form-control time-input" readonly="readonly">
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default time-btn">
+					<i class="fa fa-calendar"></i>
+				</button>
+			</span>
+	    </div>
+	    <div class="timeShowDv"></div>
+    </div>
+    <div style="width:280px;display:inline-block;">
+	    <div class="form-group input-group">
+	        <span class="input-group-addon">公司名称：</span>
+	        <input type="text" id="companyName" class="form-control">
+	    </div>
+    </div>
+    <div style="width:280px;display:inline-block;">
+	    <div class="form-group input-group">
+	        <span class="input-group-addon">公司地址：</span>
+	        <input type="text" id="companyAddr" class="form-control">
+	    </div>
+    </div>
+    <div style="width:280px;display:inline-block;">
+    	<div class="form-group input-group">
+    		<button id="button" name="search" class="btn btn-primary" type="reset"><i class="fa fa-search"></i>   查询</button>
+		</div>
+    </div>
+</div>
+	<div style="margin-top: 0px;">
+		<table id="tt" title="位置" class="easyui-datagrid" style="height: auto"
+			data-options="fitColumns:true,singleSelect:true,rownumbers:true">
+			<thead>
+				<tr>
+					<th data-options="field:'id',width:fixWidth(0.05),resizable:false,hidden:true">序号</th>
+					<th data-options="field:'companyName',width:fixWidth(0.15),resizable:false">公司名称</th>
+					<th data-options="field:'companyAddr',width:fixWidth(0.25),resizable:false">公司地址</th>
+					<th data-options="field:'createTime',fitColumns:true,formatter:dateFormatter,resizable:false">创建时间</th>
+					<th data-options="field:'updateTime',fitColumns:true,formatter:dateFormatter,resizable:false">修改时间</th>
+					<th data-options="field:'locationX',width:fixWidth(0.08),resizable:false">经度</th>
+					<th data-options="field:'locationY',width:fixWidth(0.08),resizable:false">纬度</th>
+					<th data-options="field:'creator',width:fixWidth(0.10),resizable:false">创建者</th>
+					<th
+						data-options="field:'_operate',width:fixWidth(0.10),resizable:false,formatter:formatOper">操作</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+</body>
+<script type="text/javascript" th:inline="javascript">
+
+	function formatOper(val, row, index) {
+		return '<a href="#" onclick=operate("query",'+ index + ') >查看</a>&nbsp;&nbsp<a href="#" onclick=operate("edit",'+ index + ')>修改</a>&nbsp;&nbsp<a href="#" onclick=operate("delete",'+index+')>删除</a>';
+	}
+	function dateFormatter(value,row,index) {
+		if(value==''||value==null){
+			return "";
+		}
+		var newDate = new Date(value);
+		var day = newDate.getDate();
+		var month = newDate.getMonth()+1;
+		var year = newDate.getFullYear();
+		var hours = newDate.getHours();
+		var min = newDate.getMinutes();
+		var seconds = newDate.getSeconds();
+		var dateTime = year+"-"+(month<10?'0'+month:month)+"-"+(day<10?'0'+day:day)+" "+hours+":"+min+":"+seconds;
+		return dateTime;
+		
+	}
+
+	function operate(operType,index){
+		$('#tt').datagrid('selectRow',index);
+	    var row = $('#tt').datagrid('getSelected');  
+	    if (row){
+
+	    		if(operType=='delete'){
+	    			$.messager.confirm('确认','您确认想要删除记录吗？',function(r){    
+	    			    if (r){    
+	    			    	$.ajax({
+	  		    			  type: 'POST',
+	  		    			  url: "delete_location.json",
+	  		    			  data: {id:row.id},
+	  		    			  success: function(data){
+	  		    				  if (!data.errorCode) {
+	  		    					  alert("删除成功");
+	  									window.location.href="jump_location_list.xhtml";
+	  		    				  }
+	  		    			  },
+	  		    			  dataType: 'json'
+	  		    			}); 
+	    			    }    
+	    			}); 
+	    	
+	    	}else{
+	    		var pageNum = $('.pagination-num').val();
+	    		window.location.href="jump_location_edit.xhtml?operType="+operType+"&id="+row.id+"&pageNum="+pageNum
+	    				+"&locX="+row.locationX+"&locY="+row.locationY;
+	    	}
+	    	
+	    }  
+	}
+	
+	function fixWidth(percent) {
+		return document.body.clientWidth * percent; //这里你可以自己做调整  
+	}
+
+	(function() {
+		
+		//数据对象
+		var dataObj = {};
+		$.extend(dataObj, {
+			setData : function(pageNumber, pageSize) {
+				$.ajax({
+					type : "POST",
+					url : "load_location_list.json",
+					data : {
+						pageNumber : pageNumber,
+						pageSize : pageSize,
+						createTimeBegin : $('#createTimeBegin').val(),
+						createTimeEnd :  $('#createTimeEnd').val(),
+						companyName :  $("#companyName").val(),
+						companyAddr :  $("#companyAddr").val()
+					},
+					dataType : "json",
+					success : function(result) {
+						if (!result.errorCode) {
+							$('#tt').datagrid({
+								pagination : true
+							});
+							$("#tt").datagrid("loadData", {
+								"total" : result.data.total,
+								"rows" : result.data.rows
+							});
+							var pg = $("#tt").datagrid("getPager");
+							if (pg) {
+								$(pg).pagination(
+										{
+											pageNumber : pageNumber,
+											pageSize : pageSize,
+											showPageList : false,
+											showRefresh : false,
+											beforePageText : '第',
+											afterPageText : '页，共{pages}页',
+											displayMsg : '',
+											onSelectPage : function(pageNumber,
+													pageSize) {
+												dataObj.setData(pageNumber,
+														pageSize);
+											}
+										});
+							}
+						}
+					}
+
+				})
+			}
+		});
+
+		//初始化对象
+		var dateUtil = new DateUtil;
+		var initObj = {};
+		$.extend(initObj, {
+			init : function() {
+				var pageNum = [[${pageNum}]];
+				if(pageNum){
+					dataObj.setData(pageNum, 15);
+				}else{
+					dataObj.setData(1, 15);
+				}
+			}
+		});
+	
+		//初始化
+		$(document).ready(function() {
+			initObj.init();
+			$("#button").click(function(){
+				var kuadu = dateUtil.kuadu($("#createTimeBegin").val(),$("#createTimeEnd").val());
+				if(kuadu<0){
+					$.messager.alert("系统提示", "结束时间不能小于开始时间");
+				}else if(kuadu>183){
+					$.messager.alert("系统提示", "查询时间跨度不能超过六个月");
+				}else{
+					dataObj.setData(1, 15);
+				}
+				});
+		});
+	})();
+	
+	
+</script>
+</html>

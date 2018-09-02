@@ -49,4 +49,16 @@ public class DateUtil {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return simpleDateFormat.parse(dateStr);
     }
+
+    /**
+     * 方法名称:
+     * 描述：时间格式转换成字符串
+     * 作者: dolojia
+     * 修改日期：2018/9/2 下午8:52
+     */
+    public static String getStringByDate(Date date)
+    {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        return simpleDateFormat.format(date);
+    }
 }

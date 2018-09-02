@@ -22,15 +22,15 @@ public class AdminMenu extends Model<AdminMenu> {
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
-    private String id;
+    private Long id;
     @TableField("menu_id")
-    private String menuId;
+    private Long menuId;
     @TableField("parent_id")
-    private String parentId;
+    private Long parentId;
     private String name;
     private String url;
     @TableField("menu_order")
-    private String menuOrder;
+    private Integer menuOrder;
     @TableField("create_time")
     private Date createTime;
     @TableField("update_time")
@@ -39,27 +39,27 @@ public class AdminMenu extends Model<AdminMenu> {
     private String description;
 
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public String getMenuId() {
+    public Long getMenuId() {
         return menuId;
     }
 
-    public void setMenuId(String menuId) {
+    public void setMenuId(Long menuId) {
         this.menuId = menuId;
     }
 
-    public String getParentId() {
+    public Long getParentId() {
         return parentId;
     }
 
-    public void setParentId(String parentId) {
+    public void setParentId(Long parentId) {
         this.parentId = parentId;
     }
 
@@ -79,11 +79,11 @@ public class AdminMenu extends Model<AdminMenu> {
         this.url = url;
     }
 
-    public String getMenuOrder() {
+    public Integer getMenuOrder() {
         return menuOrder;
     }
 
-    public void setMenuOrder(String menuOrder) {
+    public void setMenuOrder(Integer menuOrder) {
         this.menuOrder = menuOrder;
     }
 

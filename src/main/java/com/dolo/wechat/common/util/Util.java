@@ -7,6 +7,7 @@ import org.apache.commons.lang.time.DateFormatUtils;
 import javax.servlet.ServletInputStream;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -117,5 +118,23 @@ public class Util {
             }
         }
         return cookieMap;
+    }
+
+    /**
+     *
+     * 功能描述：删除Cookie
+     * @param request
+     * @param name
+     */
+    public static void clearCookie(HttpServletRequest request, HttpServletResponse response, String name)
+    {
+        Cookie[] Cookies = request.getCookies();
+        for (Cookie cookie : Cookies) {
+            cookie.setValue(null);
+            cookie.setPath(request.getContextPath());
+            cookie.setMaxAge(0);
+            response.addCookie(cookie);
+        }
+
     }
 }

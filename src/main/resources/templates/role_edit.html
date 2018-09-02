@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="/commons/newMain :: commomHead('角色列表')"></head>
+
+<body style="background:#fff;">
+<div class="col-lg-12" style="margin-top:20px;">
+	<ol class="breadcrumb">
+      <li><a href="jump_role_list.xhtml?pageNum=${pageNum}">角色列表</a></li>
+		<li class="active" th:if="${operType=='add'}">增加</li>
+		<li class="active" th:if="${operType=='add'}">查看</li>
+		<li class="active" th:if="${operType=='add'}">修改</li>
+
+    </ol>
+</div>
+<div class="col-lg-12" style="margin-top:10px;">
+	<form role="form">
+		<div class="form-group">
+	        <label>角色名称：</label>
+	        <input placeholder="必填" id="name" name="name" class="form-control">
+	    </div>
+	    <div class="form-group">
+	        <label>角色代码：</label>
+	        <input id="code" name="code" class="form-control" value="" placeholder="必填，不可重复" />
+	    </div>
+	    <div class="form-group">
+	        <label style="vertical-align:top;">描述：</label>
+	        <textarea rows="3" class="form-control" id="description" name="description"></textarea>
+	    </div>
+	    <div class="form-group">
+	    	<label></label>
+		    <a id="saveBtn" class="btn btn-primary btn-sm" type="button" >保存</a>
+		    <a id="cancel" th:href="'jump_role_list.xhtml?pageNum=' + ${pageNum}" class="btn btn-default btn-sm" type="button">返回</a>
+	    </div>
+	</form>
+</div>
+
+</body>
+<script type="text/javascript" th:inline="javascript">
+	(function() {
+
+		//初始化模块
+		var initObj = {};
+		$.extend(initObj, {
+			init : function() {
+				var id= [[${id}]];
+				if(id){
+					dataObj.loadData(id);
+				}
+			}
+		});
+
+		//按钮事件
+		var btnObj = {};
+		$.extend(btnObj, {
+			bindEvent : function() {
+				$("#saveBtn").click(function() {
+					if(!validateObj.validate()){
+						return false;
+					}
+					var operType="${operType}";
+					var operName="";
+					if(operType=="add"){
+						operName = "添加";
+					}else{
+						operName = "修改";
+					}
+					var adminRoleObj = {};
+					$.ajax({
+						type : "POST",
+						url : "save_role_info.json",
+						data : {
+							id : [[${id}]],
+							name : $("#name").val(),
+							code : $("#code").val(),
+							description : $("#description").val()
+						},
+						dataType : "json",
+						success : function(result) {
+							if (!result.errorCode) {
+								alert("用户角色"+operName+"成功！");
+								window.location = "jump_role_list.xhtml?pageNum=${pageNum}";
+							}else{
+								alert(result.errorMsg);
+							}
+						}
+
+					})
+				});
+			}
+		});
+		
+		//数据模块
+		var dataObj = {};
+		$.extend(dataObj,{
+			loadData : function(id){
+				var operType="${operType}";
+				$.ajax({
+					type : "POST",
+					url : "get_role_by_id.json",
+					data : {
+						id :id
+					},
+					dataType : "json",
+					success : function(result) {
+						if (!result.errorCode) {
+							var data = result.data;
+							$("#name").val(data.name);
+							$("#code").val(data.code);
+							$("#description").val(data.description);
+							if(operType=="query"){
+								$("#name").attr("readonly",true);
+								$("#code").attr("readonly",true);
+								$("#description").attr("disabled",true);
+							}
+						}
+					}
+
+				})
+			}
+		});
+		
+		
+		//数据校验模块
+		var validateObj = {};
+		$.extend(validateObj,{
+			validate : function(){
+				var name = $("#name").val();
+				if(!name){
+					alert("角色名称必须输入！");
+					return false;
+				}
+				var code = $("#code").val();
+				if(!code){
+					alert("角色代码必须输入！");
+					return false;
+				}
+				return true;
+			}
+		});
+
+		//初始化
+		$(document).ready(function() {
+			initObj.init();
+			btnObj.bindEvent();
+		});
+	})();
+</script>
+</html>

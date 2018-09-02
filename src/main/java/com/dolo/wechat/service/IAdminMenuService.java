@@ -2,6 +2,9 @@ package com.dolo.wechat.service;
 
 import com.dolo.wechat.entity.AdminMenu;
 import com.baomidou.mybatisplus.service.IService;
+import com.dolo.wechat.manage.entity.TreeNode;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IAdminMenuService extends IService<AdminMenu> {
 
+    List<TreeNode> getAdminMenuByUserName(String userName);
 }
