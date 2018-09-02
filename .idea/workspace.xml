@@ -2,96 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c51b6db-bf59-4d4d-b4d1-2a0d3bd6f74d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/common/util/ComparatorByOrder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/common/util/TreeUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/manage/controller/AdminRoleController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/manage/controller/AdminUserController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/manage/controller/LocationConroller.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/manage/controller/LoginController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/manage/controller/TestThymenleafController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/manage/entity/TreeNode.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/admin-main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/adminMenu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ajaxfileupload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/datagrid-scrollview.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/dateUtil.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/easyui-lang-en.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/easyui-lang-zh_CN.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/ecs_zh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.11.0.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.8.0.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.9.1.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.easyui.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.validator.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/menu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/newsMsgManage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/outlook2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/resource.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/textMessage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/textMsgManage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/zh_CN.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin_user_edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin_user_list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/commons/common.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/commons/login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/commons/newMain.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/location_edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/location_list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/role_edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/role_list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/thymeleaf.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_5_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_5_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_1_5_2_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_1_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_1_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_1_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_7_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_7_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_7_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/Application.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/common/util/DateUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/common/util/DateUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/common/util/Util.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/common/util/Util.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/entity/AdminMenu.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/entity/AdminMenu.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/entity/WxLocation.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/entity/WxLocation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/filter/AuthenticationFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/filter/AuthenticationFilter.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IAdminMenuService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IAdminMenuService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IAdminRoleService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IAdminRoleService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IAdminUserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IAdminUserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IWxLocationService.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IWxLocationService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/AdminMenuServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/AdminMenuServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/AdminRoleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/AdminRoleServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/AdminUserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/AdminUserServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/WxLocationServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/WxLocationServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/log4j.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/wechat-sys.iml" afterPath="$PROJECT_DIR$/wechat-sys.iml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/location_edit.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/location_edit.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/location_list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/location_list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -115,35 +28,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin_user_edit.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin_user_edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-885">
-              <caret line="118" column="46" lean-forward="false" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="location_edit.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="location_edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/location_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3705">
-              <caret line="247" column="13" lean-forward="false" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
+            <state relative-caret-position="405">
+              <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/location_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+              <folding>
+                <marker date="1535900412688" expanded="true" signature="3363:3369" ph="&amp;nbsp;" />
+                <marker date="1535900412688" expanded="true" signature="3429:3435" ph="&amp;nbsp;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dateUtil.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/dateUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="location_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/location_list.html">
+      <file leaf-file-name="newMain.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/commons/newMain.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding>
-                <marker date="1535894624814" expanded="true" signature="3358:3364" ph="&amp;nbsp;" />
-                <marker date="1535894624814" expanded="true" signature="3424:3430" ph="&amp;nbsp;" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -243,6 +170,9 @@
       <find>parentNode</find>
       <find>mainframe</find>
       <find>Location</find>
+      <find>mydiv</find>
+      <find>dateUtil</find>
+      <find>container</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -308,8 +238,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/IWxLocationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dolo/wechat/service/impl/WxLocationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dolo/wechat/manage/controller/LocationConroller.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/location_list.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/location_edit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/location_list.html" />
       </list>
     </option>
   </component>
@@ -631,19 +561,28 @@
       <updated>1535631969260</updated>
       <workItem from="1535631970806" duration="11438000" />
       <workItem from="1535804779519" duration="12479000" />
-      <workItem from="1535853977155" duration="18175000" />
+      <workItem from="1535853977155" duration="21326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42092000" />
+    <option name="totallyTimeSpent" value="45243000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="23" width="1225" height="777" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13355875" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13355875" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -651,14 +590,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.398827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3431085" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2781065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -718,121 +657,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <marker date="1531048527037" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1531048527037" expanded="false" signature="155:629" ph="..." />
-            <marker date="1531048527037" expanded="true" signature="972:1209" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="1235:1910" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="1987:2257" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="2285:2292" ph="{}" />
-            <marker date="1531048527037" expanded="false" signature="2329:2340" ph=" { " />
-            <marker date="1531048527037" expanded="false" signature="2357:2363" ph=" }" />
-            <marker date="1531048527037" expanded="false" signature="2397:2408" ph=" { " />
-            <marker date="1531048527037" expanded="false" signature="2435:2441" ph=" }" />
-            <marker date="1531048527037" expanded="true" signature="2474:2540" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="2571:2637" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="2673:2739" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="2803:3367" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="3438:3951" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="4027:4296" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="4334:4924" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="4519:4918" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="4965:5093" ph="{...}" />
-            <marker date="1531048527037" expanded="true" signature="5076:5087" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="507" column="0" lean-forward="false" selection-start-line="507" selection-start-column="0" selection-end-line="507" selection-end-column="0" />
-          <folding>
-            <marker date="1531048540478" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1531048540478" expanded="false" signature="157:1696" ph="..." />
-            <marker date="1531048540478" expanded="true" signature="2655:3080" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="3180:3828" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="3858:3869" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="3909:3915" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="3969:6842" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="6934:7170" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="7211:7222" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="7244:7250" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="7350:7744" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="7835:9030" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="9105:11494" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="11599:12090" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="12132:12280" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="12307:12318" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="12405:12411" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="12518:13871" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="12652:12762" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="12831:13865" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="13944:21925" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="14236:14409" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="14452:18327" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="18373:20488" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="20556:20812" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="20876:21073" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="21105:21919" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="22009:22733" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="22302:22535" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="22597:22727" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="22829:25244" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="22942:22957" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="22980:22990" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="23110:24641" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="24687:24873" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="24904:24919" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="24950:24960" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="25016:25090" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="25161:25238" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="25348:26195" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="25592:25725" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="25845:26189" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="26285:26660" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="26392:26407" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="26430:26440" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="26543:26654" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="26748:27647" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="26853:26868" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="26891:26901" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="27004:27641" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="27728:27985" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="27833:27848" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="27871:27881" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="27935:27979" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="28065:28277" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="28145:28160" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="28181:28191" ph=" }" />
-            <marker date="1531048540478" expanded="false" signature="28227:28242" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="28261:28271" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="28382:29234" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="28510:28525" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="28558:28568" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="28688:29228" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="29332:30025" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="29453:29468" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="29501:29511" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="29631:30019" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="30129:30838" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="30232:30247" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="30268:30278" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="30398:30832" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="30935:31369" ph="{...}" />
-            <marker date="1531048540478" expanded="false" signature="31031:31046" ph=" { " />
-            <marker date="1531048540478" expanded="false" signature="31067:31077" ph=" }" />
-            <marker date="1531048540478" expanded="true" signature="31197:31363" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="31442:31495" ph="{...}" />
-            <marker date="1531048540478" expanded="true" signature="31478:31489" ph="{}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -1587,14 +1411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/commons/newMain.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="43" lean-forward="true" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dolo/wechat/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1806,22 +1622,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/location_list.html">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="75" column="26" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <marker date="1535894624814" expanded="true" signature="3358:3364" ph="&amp;nbsp;" />
-            <marker date="1535894624814" expanded="true" signature="3424:3430" ph="&amp;nbsp;" />
-          </folding>
+        <state relative-caret-position="11535">
+          <caret line="782" column="4" lean-forward="false" selection-start-line="782" selection-start-column="4" selection-end-line="782" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/dateUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/commons/newMain.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/location_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3705">
-          <caret line="247" column="13" lean-forward="false" selection-start-line="247" selection-start-column="13" selection-end-line="247" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/location_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="60" lean-forward="false" selection-start-line="3" selection-start-column="60" selection-end-line="3" selection-end-column="60" />
+          <folding>
+            <marker date="1535900412688" expanded="true" signature="3363:3369" ph="&amp;nbsp;" />
+            <marker date="1535900412688" expanded="true" signature="3429:3435" ph="&amp;nbsp;" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -84,12 +84,14 @@ body {height: 100%;margin: 0px;padding: 0px}
 		function G(id) {
 			return document.getElementById(id);
 		}
-		var map = new BMap.Map("container"); // 创建地图实例  
-		if('${locX}'==''||'${locY}'==''){
-			var point = new BMap.Point(116.404431,39.914778); // 创建点坐标  
+		var map = new BMap.Map("container"); // 创建地图实例
+		var locX = [[${locX}]];
+		var locY = [[${locY}]];
+		if(locX=='' || locY=='' || locX==null || locY==null){
+			var point = new BMap.Point(116.404332,39.914134); // 创建点坐标
 			
 		}else{
-			var point = new BMap.Point('${locX}','${locY}'); // 创建点坐标  
+			var point = new BMap.Point(locX,locY); // 创建点坐标
 		}
 		
 		var gc = new BMap.Geocoder();
