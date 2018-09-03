@@ -12,6 +12,8 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "app.config")
 public class AppConfigProperties {
+    private static String baiDuAppId;
+    private static String baiDuAppKey;
     private static String appid;
     private static String secretKey;
 
@@ -26,6 +28,22 @@ public class AppConfigProperties {
     private static  String resArticleUrl;
 
     private static String lucenePath;
+
+    public static String getBaiDuAppId() {
+        return baiDuAppId;
+    }
+
+    public static void setBaiDuAppId(String appid) {
+        AppConfigProperties.baiDuAppId = baiDuAppId;
+    }
+
+    public static String getBaiDuAppKey() {
+        return baiDuAppKey;
+    }
+
+    public static void setBaiDuAppKey(String appid) {
+        AppConfigProperties.baiDuAppKey = baiDuAppKey;
+    }
 
     public static String getAppid() {
         return appid;

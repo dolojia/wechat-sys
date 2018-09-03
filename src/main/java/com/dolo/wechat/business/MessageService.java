@@ -1,10 +1,8 @@
 package com.dolo.wechat.business;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.dolo.wechat.common.util.DateUtil;
-import com.dolo.wechat.common.util.JsonUtil;
-import com.dolo.wechat.common.util.Util;
-import com.dolo.wechat.common.util.XmlUtil;
+import com.dolo.wechat.common.util.*;
 import com.dolo.wechat.entity.*;
 import com.dolo.wechat.factory.ResMessageFactory;
 import com.dolo.wechat.propertie.AppConfigProperties;
@@ -94,6 +92,19 @@ public class MessageService
             // 根据用户发的关键字去找匹配的文本内容，到账号对应的目录下查找消息id
             String messageId = luceneService.getMessageId(content, baseMessage.getToUserName());
             responseMessage = this.getResMessageById(messageId, baseMessage);
+
+            if (content.startsWith("翻译")){
+                TransApi api = new TransApi(AppConfigProperties.getBaiDuAppId(), AppConfigProperties.getBaiDuAppKey());
+                String result = api.getTransResult(content.replace("翻译",""), "auto", "auto");
+                JSONObject jsonObject = JsonUtil.stringToJSONObject(result);
+                if (StringUtils.isEmpty(jsonObject.getString("error_code"))){
+                    JSONArray jsonArray = jsonObject.getJSONArray("trans_result");
+                    JSONObject transObject = jsonArray.getJSONObject(0);
+                    responseMessage = transObject.getString("dst");
+                }else{
+                    responseMessage = "翻译失败";
+                }
+            }
             // 下行消息入库
             if (StringUtils.isEmpty(responseMessage))
             {
