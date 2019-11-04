@@ -2,167 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c51b6db-bf59-4d4d-b4d1-2a0d3bd6f74d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/druid-config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/druid-config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminMenuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AdminMenuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AdminRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AdminUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AdminUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AnnualRateMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AnnualRateMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMessageItemMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ArticleMessageItemMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/EventMessageJournalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/EventMessageJournalMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/LogdailyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LogdailyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MessageJournalMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MessageJournalMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MsgInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MsgInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OnthelistMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OnthelistMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RegionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RegionMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ResMessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ResMessageMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/SmsInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/SmsInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserBindMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserBindMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/WxLocationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WxLocationMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/WxMenuPrdMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WxMenuPrdMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/WxMenuTmpMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WxMenuTmpMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/WxUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/WxUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/newAdmin/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/newAdmin/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/newAdmin/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/newAdmin/font-awesome.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/newAdmin/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/newAdmin/fontawesome-webfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/niceValidate/jquery.validator.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/niceValidate/jquery.validator.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/combo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/combobox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/datagrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/datebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/easyui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/linkbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/menubutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/messager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/progressbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/propertygrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/searchbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/spinner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/splitbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/tree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/validatebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/black/window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/combo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/combobox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/datagrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/datebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/easyui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/linkbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/menubutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/messager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/progressbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/propertygrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/searchbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/spinner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/splitbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/tree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/validatebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/bootstrap/window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/combo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/combobox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/datagrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/datebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/easyui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/easyui.css-12" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/easyui.css-12" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/easyui.css-change" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/easyui.css-change" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/linkbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/menubutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/messager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/progressbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/propertygrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/searchbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/spinner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/splitbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/tree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/validatebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/default/window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/combo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/combobox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/datagrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/datebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/easyui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/linkbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/menubutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/messager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/progressbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/propertygrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/searchbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/spinner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/splitbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/tree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/validatebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/gray/window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/combo.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/combo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/combobox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/combobox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/datagrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/datagrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/datebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/datebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/easyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/easyui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/layout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/layout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/linkbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/linkbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/menubutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/menubutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/messager.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/messager.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/pagination.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/pagination.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/panel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/panel.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/progressbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/progressbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/propertygrid.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/propertygrid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/searchbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/searchbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/slider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/spinner.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/spinner.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/splitbutton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/splitbutton.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/tree.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/tree.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/validatebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/validatebox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/window.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/themes/metro/window.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.9.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-1.9.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery.validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/zh_CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/zh_CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/ueditor/jquery-1.9.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/jquery-1.9.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.parse.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/ueditor/ueditor.parse.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/thymeleaf.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/thymeleaf.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/dolo/wechat/test/util/BaiDuTranslateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/dolo/wechat/test/util/BaiDuTranslateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wechat-sys.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/wechat-sys.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wechat-sys.iws" beforeDir="false" afterPath="$PROJECT_DIR$/wechat-sys.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -229,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/druid-config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+            <state relative-caret-position="243">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -492,50 +332,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="wechat-sys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat-sys" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wechat-sys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat-sys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wechat-sys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat-sys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wechat-sys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat-sys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wechat-sys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat-sys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wechat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wechat-sys" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wechat-sys" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -694,7 +491,7 @@
       <workItem from="1535983711396" duration="6860000" />
       <workItem from="1567766684330" duration="1074000" />
       <workItem from="1569748952853" duration="708000" />
-      <workItem from="1572860280885" duration="584000" />
+      <workItem from="1572860280885" duration="717000" />
     </task>
     <servers />
   </component>
@@ -731,7 +528,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54522000" />
+    <option name="totallyTimeSpent" value="54655000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,7 +557,7 @@
       <window_info anchor="bottom" id="JRebel Executor" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991204" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44942647" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44942647" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398827" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -775,7 +572,7 @@
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="JRebel Console" order="15" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info active="true" anchor="right" id="Ant Build" order="1" visible="true" weight="0.24972253" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.12597114" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32967034" />
@@ -850,6 +647,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/util/Map.java" />
@@ -1230,8 +1031,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/druid-config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        <state relative-caret-position="243">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
         </state>
       </provider>
     </entry>
